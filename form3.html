@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+  </head>
+  <body>
+    <form action="/practice/action.html" target="_blank" method="post" >
+      <fieldset>
+        <br />
+        <legend>Personal information:</legend>
+        <label for="name"
+          >Name:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            autocomplete="on"
+            placeholder="Enter your name..."
+        /></label>
+        <br />
+        <br />
+        <label for="fname"
+          >Father Name:
+          <input
+            type="text"
+            id="fname"
+            name="name"
+            placeholder="Enter your father's name.."
+            required
+            autocomplete="on"
+          />
+        </label>
+        <br />
+        <br />
+        <label for="dob"
+          >Date of Birth:
+          <input
+            type="date"
+            id="dob"
+            name="date of birth"
+            required
+            autocomplete="on"
+          />
+        </label>
+        <br />
+        <br />
+        <label for="pob"
+          >Place of Birth:
+          <input
+            type="text"
+            id="pob"
+            name="place of birth"
+            required
+            autocomplete="on"
+            placeholder="Enter your place of birth... "
+          />
+        </label>
+        <br />
+        <br />
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+          <option value="sgender" selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="fmale">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <br />
+        <legend>Contact:</legend>
+        <label for="mnumber"
+          >Mobile Number:
+          <input
+            type="number"
+            id="mnumber"
+            novalidate
+            placeholder="+923**-*******"
+            autocomplete="on"
+          />
+        </label>
+        <br />
+        <br />
+        <label for="tnumber"
+          >Telephone Number:
+          <input
+            type="number"
+            id="tnumber"
+            novalidate
+            placeholder="****-********"
+            autocomplete="off"
+          />
+        </label>
+        <br />
+        <br />
+        <label for="mail"
+          >Email:
+          <input
+            type="email"
+            id="mail"
+            name="email"
+            required
+            placeholder="abcd123@gmail.com"
+            autocomplete="on"
+          />
+        </label>
+        <br />
+        <br />
+        <label for="cremail"
+          >Confirm Email:
+          <input
+            type="email"
+            id="cremail"
+            required
+            placeholder="abcd123@gmail.com"
+            autocomplete="off"
+          />
+        </label>
+        <br />
+        <br />
+        <label for="password"
+          >Passward:
+          <input
+            type="text"
+            id="password"
+            required
+            autocomplete="off"
+            placeholder="Password"
+          />
+        </label>
+        <br />
+        <br />
+        <label for="cpassword"
+          >Confirm Password:
+          <input
+            type="password"
+            id="cpassword"
+            required
+            autocomplete="off"
+            placeholder="Confirm Password"
+          />
+        </label>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Education:</legend>
+        <p>Choose your level of Qualification:</p>
+        <input type="radio" id="ssc" autocomplete="off" name="hssc" />
+        <label for="ssc">SSC(Matric)</label>
+        <br />
+        <input type="radio" id="hssc" autocomplete="off" name="hssc" />
+        <label for="hssc">HSSC(inter)</label>
+        <br />
+        <input type="radio" id="graduate" name="graduate" />
+        <label for="graduate">Graduate</label>
+        <br />
+        <input type="radio" id="master" name="master" />
+        <label for="master">Master</label>
+        <br />
+        <input type="radio" name="other degree" id="odegree" />
+        <label for="odegree">Other</label>
+        <br>
+        <br>
+        <label for="degree">About your Acedemic Education:</label><br>
+        <textarea name="aboutdegree" id="degree" cols="50" rows="4"
+        placeholder="Describe your Qualification Level in few words...."></textarea>
+        <br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Skills:</legend>
+        <p>Tell us about the skills that best describe you.</p>
+        <label for="communication"><input type="checkbox" id="communicaion" name="skill">Good Communication</label>
+        <br>
+        <label for="c&im"><input type="checkbox" id="c&im" name="skill">Curosity and Imagination</label>
+        <br>
+        <label for="eo&wc"><input type="checkbox" id="eo&wc" name="skill">Efective Oral and Writing Communication</label>
+        <br>
+        <label for="ct&ps"><input type="checkbox" id="ct&ps" name="skill">Critical Thinking and Problem Solving</label>
+        <br>
+        <label for="tw&col"><input type="checkbox" id="tw&col" name="skill">teamwork and Collaboration</label>
+      </fieldset>
+      <br>
+      <input type="submit" value="submit">
+    </form>
+    <hr>
+    <br>
+    <p>Click here to download the above form.</p>
+    <button><a href="/images/form.png" download="1">Download</a></button>
+  </body>
+</html>

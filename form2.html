@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+  </head>
+  <body>
+    <form>
+      <!-- creating form -->
+      <label for="fname">First Name:</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        required
+        placeholder="Muhammad"
+        autocomplete="on"
+      />
+      <br />
+      <br />
+      <label for="lname">Last Name:</label>
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        required
+        placeholder="Waseem"
+        autocomplete="on"
+      />
+      <br />
+      <br />
+      <label for="fname">Father Name:</label>
+      <input
+        type="text"
+        id="fname"
+        name="fathername"
+        required
+        autocomplete="on"
+      />
+      <br />
+      <br />
+      <label for="dob">Date of Birth:</label>
+      <input
+        type="date"
+        id="dob"
+        name="dateofbirth"
+        required
+        autocomplete="on"
+      />
+      <br />
+      <br />
+      <label for="pob">Place of Birth:</label>
+      <input
+        type="text"
+        id="pob"
+        name="placeofbirth"
+        optional
+        autocomplete="on"
+      />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="abcd123@gmail.com"
+        required
+        autocomplete="on"
+      />
+      <br />
+      <br />
+      <label fo="rtemail">Re-type Email:</label>
+      <input
+        type="email"
+        id="rtemail"
+        name="retypeemail"
+        required
+        placeholder="abcd123@gmail.com"
+        autocomplete="off"
+      />
+      <br />
+      <br />
+      <label for="security">Passward:</label>
+      <input
+        type="number"
+        id="security"
+        name="passward"
+        required
+        autocomplete="off"
+      />
+      <br />
+      <br />
+      <label for="csecurity">Re-type Passward:</label>
+      <input
+        type="number"
+        id="csecurity"
+        name="passward"
+        required
+        autocomplete="off"
+      />
+      <br />
+      <br />
+      <p>Address:</p>
+      <textarea
+        name="address"
+        rows="2"
+        cols="33"
+        placeholder="Enter your Address here..."
+        required
+        autocomplete="on"
+      ></textarea>
+      <br />
+      <br />
+      <label for="city">City:</label>
+      <input type="text" id="city" novalidate autocomplete="on" />
+      <br />
+      <br />
+      <p>
+        <label for="pro">Province:</label>
+        <select name="province" id="pro" required>
+          <option value="Select" selected>Select</option>
+          <option value="punjab">Punjab</option>
+          <option value="sindh">Sindh</option>
+          <option value="balochistan">Balochistan</option>
+          <option value="kpk">KPK</option>
+          <option value="gb">Gilgit-Baltistan</option>
+        </select>
+      </p>
+      <br />
+      <br />
+      <label for="number">Number:</label>
+      <input
+        type="number"
+        id="number"
+        name="number"
+        required
+        placeholder="+923**-*******"
+        autocomplete="on"
+      />
+      <br />
+      <br />
+      <!-- We can do the same thing by using label element also -->
+      <p>
+        Gender:
+        <select name="gender" required>
+          <option value="choose">Choose a Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+      <br />
+      <p>
+        Security Question:
+        <select name="question" required>
+          <option value="squestion" selected>
+            Choose a security Question:
+          </option>
+          <option value="nname">What is your nick name?</option>
+          <option value="fplace">What is your favourite Hobby?</option>
+          <option value="fpalyer">Who is your favourite player?</option>
+          <option value="fdish">What is your favourite dish?</option>
+        </select>
+      </p>
+      <br />
+      <label for="sanswer">Security Answer:</label>
+      <input
+        type="text"
+        id="sanswer"
+        name="sanswer"
+        required
+        autocomplete="off"
+      />
+      <br />
+      <br />
+      <label for="code">Zip Code:</label>
+      <input
+        type="number"
+        id="code"
+        name="code"
+        required
+        autocomplete="off"
+        placeholder="12345"
+      />
+      <br />
+      <br />
+      <p>Please select your field:</p>
+      <input type="checkbox" id="html" name="language" value="html" />
+      <label for="html">HTML</label>
+      <br />
+      <input type="checkbox" id="py" name="language" value="py" />
+      <label for="py">Python</label>
+      <br />
+      <input type="checkbox" id="js" name="language" value="js" />
+      <label for="js">JavaScript</label>
+      <br />
+      <input type="checkbox" id="css" name="language" value="css" />
+      <label for="css">CSS</label>
+      <br />
+      <br />
+      <p>
+        Plaese share your experience with us:
+        <br>
+        <br>
+        <textarea
+          name="experience"
+          id="experince"
+          cols="40"
+          rows="8"
+          placeholder="your experince"
+          novalidate
+          autocomplete="off"
+        ></textarea>
+      </p>
+      <p>
+        To submit your form click the submit button:
+        <input type="submit" value="submit">
+      </p>
+      <br>
+      <hr>
+      <br>
+      <p style="color: brown;">For further information visits our websites:</p>
+<ul>
+  <li>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  </li>
+  <li>
+    <a href="https://www.facebook,com" target="_blank">Facebook</a>
+  </li>
+</ul>
+    </form>
+  </body>
+</html>

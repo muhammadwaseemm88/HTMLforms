@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+  </head>
+  <body>
+    <h2>Application form for joining us.</h2>
+    <form action="action.html" target="_blank" mathod="post">
+      <!-- Input text, email, passward-->
+      <label for="fname">First Name:</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Muhammad "
+        required
+        autocomplete="on"
+      />
+      <br />
+      <br />
+      <label for="lname">Last Name:</label>
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        placeholder="Waseem"
+        required
+        autocomplete="on"
+      />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="abcd123@gmail.com"
+        required
+        autocomplete="on"
+      />
+      <br />
+      <br />
+      <label for="passward">Passward:</label>
+      <input
+        type="passward"
+        name="passward"
+        id="passward"
+        placeholder="text, numbers,symbols etc"
+        required
+      />
+      <br />
+      <br />
+      <label for="cpassward">Conform Passward:</label>
+      <input
+        type="passward"
+        name="passward"
+        id="cpassward"
+        required
+        placeholder="text, numbers,symbols etc"
+      />
+      <br />
+      <br />
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required name="dob" autocomplete="on" />
+      <br />
+      <br />
+      <!-- Radio attribute: The <input type="radio"> defines a radio button. Radio buttons let a user select ONE of a limited number of choices. -->
+      <p>
+        Some of the web Languages are given below. Choose your favourite web
+        language.
+      </p>
+      <input type="radio" id="html" name="favourite language" value="HTML" />
+      <label for="html">HTML</label>
+      <br />
+      <input type="radio" id="css" name="favourite language" value="CSS" />
+      <label for="css">CSS</label>
+      <br />
+      <input
+        type="radio"
+        id="js"
+        name="favourite language"
+        value="JavaScript"
+      />
+      <label for="js">JavaScript</label>
+      <br />
+      <input type="radio" id="py" name="favourite language" value="Python" />
+      <label for="py">Python</label>
+      <br />
+      <br />
+      <!-- Options -->
+      <!-- DropDown Menu -->
+      <p>
+        <label for="c1">Please select your country:</label>
+        <select name="country" id="c1" required>
+          <option value="select">Select</option>
+          <option value="pakistan" selected>Pakistan</option>
+          <option value="india">India</option>
+          <option value="bangladash">Bangladash</option>
+          <option value="afghanistan">afghanistan</option>
+          <option value="usa">America</option>
+          <option value="japan">Japan</option>
+          <option value="iran">Iran</option>
+        </select>
+      </p>
+      <br />
+      <p>What type of device you have?</p>
+      <!-- Cheakboxes: The <input type="checkbox"> defines a checkbox.Checkboxes let a user select ZERO or MORE options of a limited number of choices. -->
+      <label for="device1">I have a Laptop</label>
+      <input type="checkbox" id="device1" name="device1" value="laptop" />
+      <br />
+      <br />
+      <label for="device2">I have a PC</label>
+      <input type="checkbox" id="device2" name="device2" value="pc" />
+      <br />
+      <br />
+      <label for="device3">I have a Tablet</label>
+      <input type="checkbox" id="device3" name="device3" value="tablet" />
+      <br />
+      <br />
+      <label for="device4">I have a Mobile</label>
+      <input type="checkbox" id="device4" name="device4" value="mobile" />
+      <br />
+      <br />
+      <label for="device5">Other device</label>
+      <input type="checkbox" id="device5" name="device5" value="other device" />
+      <br />
+      <p><strong>Enter your Address Here:</strong></p>
+      <textarea
+        name="address"
+        cols="50"
+        rows="10"
+        placeholder="Enter your permanant or current address."
+        autocomplete="on"
+        novalidate
+      ></textarea>
+      <br />
+      <br />
+      <!-- Button -->
+      <input type="submit" value="submit" />
+    </form>
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <hr>
+    <br>
+    <!-- download element -->
+    <a
+      href="/video/yt5s.io-Shina Best Song - thai Tanulai Otay Kaghazai - Singer Rahim Hunzai- Lyric Jan Ali Jan - GB MusicTV-(480p).mp4"
+      download="1"
+      >Download our video</a
+    >
+    <br />
+    <br />
+    <hr />
+    <br>
+    <!-- datalist tags -->
+    <form>
+      <input type="text" list="search" name="values" placeholder="search"/>
+      <datalist id="search">
+        <option value="apple">
+        <option value="banana">
+        <option value="pineapple">
+        <option value="car">
+        <option value="roll no">
+        <option value="principle">
+      </datalist>
+      <input type="submit" value="search" />
+    </form>
+    <br>
+    <hr>
+    <br>
+    
+  </body>
+</html>
